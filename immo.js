@@ -3,7 +3,6 @@ let i = 1;
 
 setInterval(switchPic, 10000);
 
-
 function init() {
     window.onscroll = function () {
         if(window.pageYOffset > 0) {
@@ -40,7 +39,7 @@ function img(a) {
         document.getElementById('haus2').classList.remove('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.add('hide');
-        document.getElementById('headline').innerHTML = 'Anzeige';
+        document.getElementById('headline').innerHTML = 'Neue Anzeige';
     } else if (a == 3) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');

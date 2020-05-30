@@ -22,7 +22,6 @@ body {
     top: 420px;
 }
 
-
 .header-img1 {
     position: absolute;
     top: 0;
@@ -73,7 +72,6 @@ body {
     padding-left: 150px;
 }
 
-
 .header-NumberPic {
     position: absolute;
     display: flex;
@@ -92,13 +90,14 @@ body {
     border-bottom: 1px solid transparent;
     font-size: 16px;
 }
+
 .header-NumberPic p:hover {
     border-bottom: 1px solid white;
 }
 
 .arrow-img {
     height: 48px;
-    width: 48px;
+    width: 80px;
     bottom: 24px;
     right: 24px;
     cursor: pointer;
@@ -106,6 +105,7 @@ body {
 
 .header-arrow {
     position: absolute;
+    width: 80px;
     bottom: 8px;
     right: 8px;
 }
@@ -127,9 +127,8 @@ body {
     background-color: white;
     height: 72px;
     color: black;
-    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 .navigationbar-container-scroll a {
     color: rgb(19, 48, 61) !important;
@@ -138,7 +137,6 @@ body {
 .navigationbar-container-scroll a:hover {
     color: rgb(0, 0, 0) !important;
 }
-
 
 .navigationbar-links {
     display: flex;
@@ -158,43 +156,27 @@ body {
     border-bottom: 1px solid white;
 }
 
-
-.propositions {
+.proposal-section {
     height: 100vh;
     background-color: rgb(169, 242, 245);
-    ;
-    position: relative;
-}
-
-.title-propositions {
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: rgb(19, 48, 61);
-    font-size: 24px;
-    height: 20%;
-}
-
-.lower-propositions {
-    height: 80%;
+    width: 100%;
+    position: relative;
     display: flex;
+    z-index: 0;
 }
 
-.propositions-left {
+.proposal-left {
     width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(19, 48, 61);
-    font-size: 24px;
+    flex-direction: column;
+    font-size: 16px;
 }
 
-.propositions-right {
+.proposal-right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -202,16 +184,11 @@ body {
     justify-content: center;
 }
 
-.portrait-img {
-    height: 450px;
-    width: 300px;
+.img-portrait {
+    height: 400px;
+    width: 280px;
     border-radius: 24px;
     object-fit: cover;
-}
-
-.name {
-    height: 48px;
-    font-size: 32px;
 }
 
 .footer-contact {
@@ -261,4 +238,167 @@ body {
     text-align: center;
     color: rgb(169, 242, 245);
     font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5em;
+        text-align: start;
+    }
+    .header-NumberPic {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: 8px;
+        left: 8px;
+        color: white;
+        height: 200px;
+        font-size: 64px;
+        z-index: 1;
+    }
+    .header-NumberPic p {
+        margin-left: 16px;
+        margin-right: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        font-size: 64px;
+    }
+    .arrow-img {
+        height: 192px;
+        width: 320px;
+        bottom: 24px;
+        right: 24px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .header-arrow {
+        position: absolute;
+        width: 320px;
+        bottom: 16px;
+        right: 16px;
+        z-index: 1;
+    }
+    .navigationbar-container {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 360px;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: rgba(0, 0, 0, 0.0);
+        z-index: 1;
+        transition: all 225ms ease-in-out;
+    }
+    .header-content {
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: white;
+        font-size: 64px;
+        padding-left: 0px;
+        left: 32px
+    }
+    .header-logo {
+        height: 134px;
+        width: 440px;
+        margin-top: 16px;
+        margin-left: 16px;
+        object-fit: cover;
+    }
+    .underscore {
+        width: 280px;
+        height: 32px;
+        background-color: crimson;
+        position: absolute;
+        left: 32px;
+        top: 1320px;
+    }
+    .navigationbar-links {
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+        font-size: 40px;
+    }
+    .navigationbar-links a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 40px;
+    }
+    .proposal-section {
+        height: 100vh;
+        background-color: rgb(169, 242, 245);
+        color: rgb(19, 48, 61);
+        width: 100%;
+        position: relative;
+        display: flex;
+        z-index: 0;
+        flex-direction: column;
+        font-size: 64px;
+    }
+    .proposal-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 48px;
+        height: 50vh;
+    }
+    .proposal-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+    .img-portrait {
+        height: 480px;
+        width: 600px;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+    .upper-contact {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(169, 242, 245);
+        font-size: 64px;
+    }
+    .lower-contact {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-lower-contact {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(169, 242, 245);
+        font-size: 64px;
+    }
+    .right-lower-contact {
+        width: 100%;
+        margin-top: 64px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: rgb(169, 242, 245);
+        font-size: 64px;
+    }
 }
