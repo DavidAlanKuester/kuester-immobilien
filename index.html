@@ -7,89 +7,114 @@
     <link rel="stylesheet" href="style.css">
     <script src="immo.js"></script>
     <link rel="style" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
 
 <body onload="init()">
+
+    <div id="blackbendjava" onclick="responsive_menu_exit()" class="black-blend hide">
+
+    </div>
     <div class="header-page">
-        <img id="haus1" src="img/haus1blau.png" class="header-img1">
-        <img id="haus2" src="img/haus2blau.png" class="header-img1 hide">
-        <img id="haus3" src="img/haus3blau.png" class="header-img1 hide">
-        <img id="haus4" src="img/haus4blau.png" class="header-img1 hide">
+        <img id="haus1" src="img/haus1black.png" class="header-img1">
+        <img id="haus2" src="img/haus2black.png" class="header-img1 hide">
+        <img id="haus3" src="img/haus3black.png" class="header-img1 hide">
+        <img id="haus4" src="img/haus4black.png" class="header-img1 hide">
 
 
         <div class="header-content">
-            <h1 id="headline">Kuester-Immobilien</h1>
+            <h1 id="headline">Küster-Immobilien</h1>
             <div class="underscore" id="underscore"></div>
 
             <div class="header-NumberPic">
-               <p onclick="img(1)">1</p>|
-               <p onclick="img(2)">2</p>|
-               <p onclick="img(3)">3</p>|
-               <p onclick="img(4)">4</p>
-            
+                <p onclick="img(1)">1</p>|
+                <p onclick="img(2)">2</p>|
+                <p onclick="img(3)">3</p>|
+                <p onclick="img(4)">4</p>
+
             </div>
 
             <div class="header-arrow">
-                <img onclick="switchPic()" src="img/arrow.png" class="arrow-img">
+                <img onclick="switchPic(); resetInterval();" src="img/arrow-nice.png" class="arrow-img">
             </div>
         </div>
 
 
         <div class="navigationbar-container" id="navbar">
             <div>
-                <img src="img/logo.jpg" class="header-logo">
+                <img id="logo_white" src="img/logo_white.png" class="header-logo" style="position: absolute;">
+                <img id="logo" src="img/KuesterImmo_Logo_quer.png" class="header-logo hide" style="position: absolute;">
             </div>
             <nav class="navigationbar-links">
-                <a href="#">Freie Wohnungen</a> |
-                <a href="#">Verwaltungsangebot</a> |
-                <a href="#">Kontakt</a>
+                <a href="https://www.immowelt.de/profil/2b0a923b5145468680576f459373774b">Angebote</a> |
+                <a href="#propositions">Service</a> |
+                <a href="#footer">Kontakt</a> |
+                <a href="#">English</a>
             </nav>
+
+            <div class="menu">
+                <img id="menu-white" onclick="responsive_menu()" src="img/menu-white.png" style="position: absolute;">
+                <img id="menu-black" onclick="responsive_menu()" src="img/menu-black.png" style="position: absolute;" class="hide">
+            </div>
+
+        </div>
+
+        <div id="responsive-menu-click" class="responsive-menu">
+            <div class="menu-logo-div">
+                <img src="img/KuesterImmo_Logo.png" class="menu-logo">
+            </div>
+            <div class="menu-links-div">
+                <p><a href="https://www.immowelt.de/profil/2b0a923b5145468680576f459373774b">Angebote</a> </p>
+                <p><a href="#propositions">Service</a> </p>
+                <p><a href="#footer">Kontakt</a> </p>
+                <p><a href="#">English</a></p>
+            </div>
+            <div class="exit">
+                <img  classs="exit-img" onclick="responsive_menu_exit()" src="img/exit.png">
+            </div>
+
         </div>
     </div>
- </div>
+    </div>
 
+    </div>
+    <div class="proposal-section" id="propositions">
+        <div class="proposal-left">
+            <h2>Service</h2>
+            <p> <b>Gas- und Wasserinstallation</b></p>
+            <p> <b>Tapezier- und Antreicharbeit</b> </p>
+            <p> <b>Sanierung</b> </p>
+            <p> <b>Gewerberäumlichkeiten</b> </p>
+            <p> <b>Bandräume + Übungshalle</b></p>
+            <p> <b>Wohnungen</b> </p>
         </div>
-        <div class="proposal-section">
-            <div class="proposal-left">
-                <h2>Angebote</h2>
-                <p> <b>Studentenwohnungen</b> </p>
-                <p> <b>Pärchenwohnungen </b></p>
-                <p> <b>Familienwohnungen </b> </p>
-                <p> <b>Gewerberäumlichkeiten</b> </p>
-                <p> <b>Bandräume + Übungshalle</b></p>
-                <p> <b>Verwaltung</b> </p>
+        <div class="proposal-right">
+            <div class="portrait-card">
+                <img src="./img/portrait.jpg" class="img-portrait">
             </div>
-            <div class="proposal-right">
-                <div class="portrait-card">
-                    <img src="./img/portrait.jpg" class="img-portrait">
-                </div>
-                <div>
-                    <h2>Mr. Green</h2>
-                </div>
+            <div>
+                <h2>Mr. Green</h2>
             </div>
+        </div>
+    </div>
+
+    <div class="footer-contact" id="footer">
+        <div class="left-footer">
+            <a href="https://developerakademie.com/impressum">Impressum</a>
+            <a href="https://developerakademie.com/datenschutz">Datenschutz</a>
+        </div>
+        <div class="right-footer">
+            <p>
+                <b>Kontakt</b> <br> Hinüberstr 13a <br> 30175 Hannover <br>
+                T 0511 - 343463 <br> M 01525 - 3558433 <br>
+                kontakt@kuester-immo.de
+            </p>
         </div>
 
-    <div class="footer-contact">
-
-        <div class="upper-contact">
-            <h2>Kontakt</h2>
-        </div>
-        <div class="lower-contact">
-            <div class="left-lower-contact">
-                <a href="https://developerakademie.com/impressum">Impressum</a>
-                <a href="https://developerakademie.com/datenschutz">Datenschutz</a>
-                <a href="#">English</a>
-            </div>
-            <div class="right-lower-contact">
-                <p>
-                    Hinüberstr 13a <br> 30175 Hannover <br>
-                    T 0511 - 343463 <br> M 01525 - 3558433 <br>
-                    kontakt@kuester-immo.de
-                </p>
-            </div>
-        </div>
 
     </div>
 
