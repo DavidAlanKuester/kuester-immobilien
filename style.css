@@ -14,14 +14,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.underscore {
-    width: 200px;
-    height: 8px;
-    background-color: crimson;
-    position: absolute;
-    left: 150px;
-    top: 560px;
-}
 
 .header-img1 {
     position: absolute;
@@ -85,6 +77,10 @@ body {
     padding-left: 150px;
 }
 
+.header-content h1 {
+border-bottom: solid 10px crimson;
+}
+
 .header-NumberPic {
     position: absolute;
     display: flex;
@@ -141,6 +137,7 @@ body {
     transition: all 225ms ease-in-out;
 }
 
+
 .navigationbar-container-scroll {
     background-color: white;
     height: 104px;
@@ -188,9 +185,6 @@ body {
     display: none;
 }
 
-.black-blend {
-    display: none;
-}
 
 .proposal-section {
     height: 100vh;
@@ -221,9 +215,9 @@ body {
 }
 
 .img-portrait {
-    height: 400px;
+    height: 280px;
     width: 280px;
-    border-radius: 24px;
+    border-radius: 100%;
     object-fit: cover;
 }
 
@@ -255,6 +249,11 @@ body {
     border-bottom: 1px solid rgb(205, 228, 222);
 }
 
+.d-none {
+    display: none;
+}    
+
+
 .right-footer {
     width: 50%;
     align-items: center;
@@ -264,6 +263,16 @@ body {
     color: rgb(205, 228, 222);
     font-size: 20px;
 }
+
+.page-padding {
+    padding: 120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
 
 @media (max-width: 1000px) {
     h1 {
@@ -346,6 +355,8 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        transition: all 225ms ease;
+
     }
     .menu-logo {
         height: 250px;
@@ -382,7 +393,6 @@ body {
         display: flex;
     }
     .black-blend {
-        display: unset;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -407,8 +417,8 @@ body {
     }
     .hide-menu {
         transform: translateX(720px);
-        transition: all 1s ease;
     }
+
 
     .underscore {
         width: 280px;
@@ -451,9 +461,9 @@ body {
         height: 50vh;
     }
     .img-portrait {
-        height: 520px;
-        width: 480px;
-        border-radius: 24px;
+        height: 280px;
+        width: 280px;
+        border-radius: 100%;
         object-fit: cover;
     }
     .footer-contact {
