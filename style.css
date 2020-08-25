@@ -169,6 +169,16 @@ border-bottom: solid 10px crimson;
 
 .navigationbar-links a:hover {
     border-bottom: 1px solid white;
+
+}
+
+.navigationbar-links-press a {
+    color: black !important;
+}
+
+.navigationbar-links-press a:hover {
+    border-bottom: 1px solid black !important;
+
 }
 
 .header-logo {
