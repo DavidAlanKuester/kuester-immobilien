@@ -17,15 +17,18 @@
 
 <body onload="init()">
 
+    <!-- Background screen of the open menu for responsive version - start   -->
     <div id="blackbendjava" onclick="removeMenu()" class="black-blend d-none">
-
     </div>
+    <!-- Background screen of the open menu for responsive version -  end -->
+
+    <!-- Header-section - start -->
+    <!-- ImageSlider - start -->
     <div class="header-page" id="header-page">
         <img id="haus1" src="img/haus1black.png" class="header-img1">
         <img id="haus2" src="img/haus2black.png" class="header-img1 hide">
         <img id="haus3" src="img/haus3black.png" class="header-img1 hide">
         <img id="haus4" src="img/haus4black.png" class="header-img1 hide">
-
 
         <div class="header-content">
             <h1 id="headline">Küster-Immobilien</h1>
@@ -35,15 +38,15 @@
                 <p onclick="img(1)">2</p>|
                 <p onclick="img(2)">3</p>|
                 <p onclick="img(3)">4</p>
-
             </div>
 
             <div class="header-arrow">
                 <img onclick="switchPic(); resetInterval();" src="img/arrow-nice.png" class="arrow-img">
             </div>
         </div>
+        <!-- ImageSlider - end -->
 
-
+        <!-- Navigationbar - start -->
         <div class="navigationbar-container" id="navbar">
             <div>
                 <img id="logo_white" src="img/logo_white.png" class="header-logo" style="position: absolute;">
@@ -62,7 +65,9 @@
             </div>
 
         </div>
+        <!-- Navigationbar - end -->
 
+        <!-- Menu for responsive version - start -->
         <div id="responsive-menu-click" class="responsive-menu hide-menu">
             <div class="menu-logo-div">
                 <img src="img/KuesterImmo_Logo.png" class="menu-logo">
@@ -78,7 +83,11 @@
 
         </div>
     </div>
- 
+    <!-- Menu for responsive version - end -->
+    <!-- Header-section - end -->
+
+    <!-- Proposal-section - start -->
+
     <div class="proposal-section" id="propositions">
         <div class="proposal-left">
             <h2>Service</h2>
@@ -95,6 +104,10 @@
             </div>
         </div>
     </div>
+
+        <!-- Proposal-section - end -->
+
+                <!-- Footer - start -->
 
     <div class="footer-contact" id="footer">
         <div class="left-footer">
@@ -113,6 +126,7 @@
 
 
     </div>
+                    <!-- Footer - end -->
 
 
     <div></div>
