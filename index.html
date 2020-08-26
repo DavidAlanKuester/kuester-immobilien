@@ -20,7 +20,7 @@
     <div id="blackbendjava" onclick="removeMenu()" class="black-blend d-none">
 
     </div>
-    <div class="header-page">
+    <div class="header-page" id="header-page">
         <img id="haus1" src="img/haus1black.png" class="header-img1">
         <img id="haus2" src="img/haus2black.png" class="header-img1 hide">
         <img id="haus3" src="img/haus3black.png" class="header-img1 hide">
@@ -52,12 +52,13 @@
             <nav class="navigationbar-links">
                 <a href="https://www.immowelt.de/profil/2b0a923b5145468680576f459373774b">Angebote</a> |
                 <a href="#propositions">Service</a> |
-                <a href="#footer">Kontakt</a> 
+                <a href="#footer">Kontakt</a>
             </nav>
 
             <div class="menu">
                 <img id="menu-white" onclick="showMenu()" src="img/menu-white.png" style="position: absolute;">
-                <img id="menu-black" onclick="showMenu()" src="img/menu-black.png" style="position: absolute;" class="hide">
+                <img id="menu-black" onclick="showMenu()" src="img/menu-black.png" style="position: absolute;"
+                    class="hide">
             </div>
 
         </div>
@@ -72,14 +73,12 @@
                 <p><a href="#footer">Kontakt</a> </p>
             </div>
             <div class="exit">
-                <img  class="exit-img" onclick="removeMenu()" src="img/exit.png">
+                <img class="exit-img" onclick="removeMenu()" src="img/exit.png">
             </div>
 
         </div>
     </div>
-    </div>
-
-    </div>
+ 
     <div class="proposal-section" id="propositions">
         <div class="proposal-left">
             <h2>Service</h2>
@@ -99,9 +98,10 @@
 
     <div class="footer-contact" id="footer">
         <div class="left-footer">
-            <a href="/Impressum.html">Impressum</a>
-            <a href="https://developerakademie.com/datenschutz">Datenschutz</a>
-            <a href="#headline">Home</a>
+            <a href="#header-page">Home</a> |
+            <a href="./imprint.html">Impressum</a> |
+            <a href="./data-protection.html">Datenschutz</a>
+
         </div>
         <div class="right-footer">
             <p>
@@ -115,7 +115,7 @@
     </div>
 
 
-<div></div>
+    <div></div>
 
 
 </body>
