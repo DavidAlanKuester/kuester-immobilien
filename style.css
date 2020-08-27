@@ -1,3 +1,6 @@
+
+
+
 html {
     height: 100%;
     scroll-behavior: smooth;
@@ -14,7 +17,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.hide {
+    opacity: 0 !important;
+}
 
+
+/* Header-section - Start */
 .header-img1 {
     position: absolute;
     top: 0;
@@ -58,9 +66,6 @@ body {
     }
 }
 
-.hide {
-    opacity: 0 !important;
-}
 
 .header-content {
     position: absolute;
@@ -186,6 +191,7 @@ border-bottom: solid 10px crimson;
     object-fit: cover;
 }
 
+
 .menu {
     display: none;
 }
@@ -194,7 +200,9 @@ border-bottom: solid 10px crimson;
     display: none;
 }
 
+/* Header-section - end */
 
+/* Proposal-section - start */
 .proposal-section {
     height: 100vh;
     background-color: rgb(205, 228, 222);
@@ -229,7 +237,9 @@ border-bottom: solid 10px crimson;
     border-radius: 100%;
     object-fit: cover;
 }
+/* Proposal-section - end */
 
+/* Footer - start */
 .footer-contact {
     height: 30vh;
     width: 100%;
@@ -289,10 +299,9 @@ border-bottom: solid 10px crimson;
     flex-direction: column;
     justify-content: space-around;
 }
+/* Footer - end */
 
-
-
-
+/* Responsive - start */
 @media (max-width: 1000px) {
     h1 {
         font-size: 1.5em;
@@ -354,6 +363,8 @@ border-bottom: solid 10px crimson;
         width: 600px;
         object-fit: cover;
     }
+
+    /* Responsive-Menu - start */
     .menu {
         left: 32px;
         display: flex;
@@ -438,18 +449,11 @@ border-bottom: solid 10px crimson;
         transform: translateX(720px);
     }
 
-
-    .underscore {
-        width: 280px;
-        height: 32px;
-        background-color: crimson;
-        position: absolute;
-        left: 32px;
-        top: 1200px;
-    }
     .navigationbar-links {
         display: none;
     }
+    /* Responsive-Menu - end */
+
     .proposal-section {
         height: 100vh;
         background-color: rgb(205, 228, 222);
@@ -512,3 +516,4 @@ border-bottom: solid 10px crimson;
         font-size: 48px;
     }
 }
+    /* Responsive-Menu - end */

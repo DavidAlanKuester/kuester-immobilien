@@ -1,7 +1,8 @@
 let i = 0;
 let imgInterval = setInterval(switchPic, 10000);
-
+    // ******* Onload function - start ******* 
 function init() {
+    // ******* Switching Navigationbar from transparent to white on onscroll - start ******* 
     window.onscroll = function () {
         if (window.pageYOffset > 0) {
             document.getElementById('navbar').classList.add('navigationbar-container-scroll');
@@ -18,9 +19,12 @@ function init() {
             document.getElementById('menu-white').classList.remove('hide');
         }
     }
+    // ******* Switching Navigationbar from transparent to white on onscroll - end ******* 
     img(0);
 }
+    // ******* Onload function - end ******* 
 
+    // ******* Responsive Menu- start ******* 
 function showMenu() {
     document.getElementById('responsive-menu-click').classList.remove('hide-menu');
     document.getElementById('blackbendjava').classList.remove('d-none');
@@ -30,17 +34,16 @@ function removeMenu() {
     document.getElementById('responsive-menu-click').classList.add('hide-menu');
     document.getElementById('blackbendjava').classList.add('d-none');
 }
+    // ******* Responsive Menu- end ******* 
 
+    // ******* Image&Headline-Slider - start ******* 
 function resetInterval() {
     clearInterval(img_interval);
     imgIinterval = setInterval(switchPic, 10000);
 }
 
-
 function switchPic() {
-
     i = i + 1;
-
     if (i > 3) {
         i = 0;
     }
@@ -81,3 +84,4 @@ function img(a) {
         document.getElementById('headline').classList.remove('fly-in');
     }, 1000);
 }
+    // ******* Image&Headline-Slider - end ******* 
