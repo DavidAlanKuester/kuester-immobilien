@@ -1,6 +1,7 @@
 let i = 0;
 let imgInterval = setInterval(switchPic, 10000);
-    // ******* Onload function - start ******* 
+
+// ******* Onload function - start ******* 
 function init() {
     // ******* Switching Navigationbar from transparent to white on onscroll - start ******* 
     window.onscroll = function () {
@@ -22,9 +23,9 @@ function init() {
     // ******* Switching Navigationbar from transparent to white on onscroll - end ******* 
     img(0);
 }
-    // ******* Onload function - end ******* 
+// ******* Onload function - end ******* 
 
-    // ******* Responsive Menu- start ******* 
+// ******* Responsive Menu- start ******* 
 function showMenu() {
     document.getElementById('responsive-menu-click').classList.remove('hide-menu');
     document.getElementById('blackbendjava').classList.remove('d-none');
@@ -34,12 +35,16 @@ function removeMenu() {
     document.getElementById('responsive-menu-click').classList.add('hide-menu');
     document.getElementById('blackbendjava').classList.add('d-none');
 }
-    // ******* Responsive Menu- end ******* 
+// ******* Responsive Menu- end ******* 
 
-    // ******* Image&Headline-Slider - start ******* 
+// ******* Image&Headline-Slider - start ******* 
 function resetInterval() {
-    clearInterval(img_interval);
-    imgIinterval = setInterval(switchPic, 10000);
+    clearInterval(imgInterval);
+    imgInterval = setInterval(switchPic, 10000);
+    resetZoom = document.getElementById('slideshow-img');
+    resetZoom.style.animation = 'none';
+    resetZoom.style.animation = null;
+
 }
 
 function switchPic() {
@@ -84,4 +89,4 @@ function img(a) {
         document.getElementById('headline').classList.remove('fly-in');
     }, 1000);
 }
-    // ******* Image&Headline-Slider - end ******* 
+    // ******* Image&Headline-Slider - end *******

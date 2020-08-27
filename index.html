@@ -25,19 +25,20 @@
     <!-- Header-section - start -->
     <!-- ImageSlider - start -->
     <div class="header-page" id="header-page">
-        <img id="haus1" src="img/haus1black.png" class="header-img1">
-        <img id="haus2" src="img/haus2black.png" class="header-img1 hide">
-        <img id="haus3" src="img/haus3black.png" class="header-img1 hide">
-        <img id="haus4" src="img/haus4black.png" class="header-img1 hide">
-
+        <div id="slideshow-img">
+            <img id="haus1" src="img/haus1black.png" class="header-img1">
+            <img id="haus2" src="img/haus2black.png" class="header-img1 hide">
+            <img id="haus3" src="img/haus3black.png" class="header-img1 hide">
+            <img id="haus4" src="img/haus4black.png" class="header-img1 hide">
+        </div>
         <div class="header-content">
             <h1 id="headline">Küster-Immobilien</h1>
 
             <div class="header-NumberPic">
-                <p onclick="img(0)">1</p>|
-                <p onclick="img(1)">2</p>|
-                <p onclick="img(2)">3</p>|
-                <p onclick="img(3)">4</p>
+                <p onclick="img(0), resetInterval()">1</p>|
+                <p onclick="img(1), resetInterval()">2</p>|
+                <p onclick="img(2), resetInterval()">3</p>|
+                <p onclick="img(3), resetInterval()">4</p>
             </div>
 
             <div class="header-arrow">
