@@ -7,31 +7,54 @@
         Kuester-Immobilien
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleOtherPages.css">
     <script src="immo.js"></script>
     <link rel="style" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
 
-<body onload="init()">
+<body>
+    <!-- Background screen of the open menu for responsive version - start   -->
+    <div id="blackbendjava" onclick="removeMenu()" class="black-blend-otherpages d-none">
+    </div>
+    <!-- Background screen of the open menu for responsive version -  end -->
     <!-- Navigationbar - start -->
-    <div class="navigationbar-container" id="navbar">
+    <div class="navigationbar-container-data" id="navbar">
         <div>
-            <img id="logo" src="img/KuesterImmo_Logo_quer.png" class="header-logo" style="position: absolute;">
+            <img id="logo" src="img/KuesterImmo_Logo_quer.png" class="header-logo header-logo-responsive"
+                style="position: absolute;">
         </div>
         <nav class="navigationbar-links-press navigationbar-links">
-            <a href="./index.html">Home</a>
+            <a href="./index.html">Hauptseite</a>
             <a href="./imprint.html">Impressum</a>
-
         </nav>
+        <div class="menu">
+            <img id="menu-black" onclick="showMenu()" src="img/menu-black.png" class="menu-symbol-responsive">
+        </div>
     </div>
-    <!-- Navigationbar - end -->
+    <!-- Menu for responsive version - start -->
+    <div id="responsive-menu-click" class="responsive-menu-otherpages hide-menu">
+        <div class="menu-logo-div-otherpages">
+            <img src="img/KuesterImmo_Logo.png" class="menu-logo-otherpages">
+        </div>
+        <div class="menu-links-div-otherpages">
+            <a href="./index.html">Hauptseite</a>
+            <a href="./imprint.html">Impressum</a>
+        </div>
+        <div class="exit-otherpages">
+            <img class="exit-img-otherpages" onclick="removeMenu()" src="img/exit_white.png">
+        </div>
+    </div>
+    <!-- Menu for responsive version - end -->
 
+    <!-- Navigationbar - end -->
     <!-- Content - start -->
 
     <div class="page-padding-data">
-        <h1>Datenschutzerklärung</h1>
+        <h1> <b>Datenschutzerklärung</b></h1>
         <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO),
             ist:</p>
         <p>Daniel Küster</p>
@@ -53,10 +76,12 @@
         <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige
             Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige
             Behörde.</p>
-        <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a
-                href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
+        <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter:
+                href="https://www.bfdi.bund.de/DE/Infothek/ <br> 
+                Anschriften_Links/anschriften_links-node.html" 
                 target="_blank"
-                rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.
+                rel="nofollow noopener">https://www.bfdi.bund.de/DE <br>
+                /Infothek/Anschriften_Links/anschriften_links-node.html
         </p>
         <p></p>
         <h2>Erfassung allgemeiner Informationen beim Besuch unserer Website</h2>

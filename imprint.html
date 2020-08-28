@@ -7,6 +7,7 @@
         Kuester-Immobilien
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleOtherPages.css">
     <script src="immo.js"></script>
     <link rel="style" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link
@@ -15,18 +16,44 @@
 </head>
 
 <body>
+    <!-- Background screen of the open menu for responsive version - start   -->
+    <div id="blackbendjava" onclick="removeMenu()" class="black-blend-otherpages d-none">
+    </div>
+    <!-- Background screen of the open menu for responsive version -  end -->
     <!-- Navigationbar - start -->
-    <div class="navigationbar-container" id="navbar">
+    <div class="navigationbar-container-data" id="navbar">
         <div>
-            <img id="logo" src="img/KuesterImmo_Logo_quer.png" class="header-logo" style="position: absolute;">
+            <img id="logo" src="img/KuesterImmo_Logo_quer.png" class="header-logo header-logo-responsive"
+                style="position: absolute;">
         </div>
         <nav class="navigationbar-links-press navigationbar-links">
-            <a href="./index.html">Home</a>
+            <a href="./index.html">Hauptseite</a>
             <a href="./data-protection.html">Datenschutz</a>
 
         </nav>
+
+        <div class="menu">
+            <img id="menu-black" onclick="showMenu()" src="img/menu-black.png" class="menu-symbol-responsive">
+        </div>
+
     </div>
     <!-- Navigationbar - end -->
+    <!-- Menu for responsive version - start -->
+    <div id="responsive-menu-click" class="responsive-menu-otherpages hide-menu">
+        <div class="menu-logo-div-otherpages">
+            <img src="img/KuesterImmo_Logo.png" class="menu-logo-otherpages">
+        </div>
+        <div class="menu-links-div-otherpages">
+            <a href="./index.html">Hauptseite</a>
+            <a href="./data-protection.html">Datenschutz</a>
+        </div>
+        <div class="exit-otherpages">
+            <img class="exit-img-otherpages" onclick="removeMenu()" src="img/exit_white.png">
+        </div>
+    </div>
+    <!-- Menu for responsive version - end -->
+
+
 
     <!-- Content - start -->
     <div class="page-padding-imprint">
