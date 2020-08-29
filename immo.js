@@ -3,7 +3,13 @@ let imgInterval = setInterval(switchPic, 10000);
 
 // ******* Onload function - start ******* 
 function init() {
-    // ******* Switching Navigationbar from transparent to white on onscroll - start ******* 
+    scrollingChange();
+    img(0);
+}
+// ******* Onload function - end ******* 
+
+// ******* Switching Navigationbar from transparent to white on onscroll - start ******* 
+function scrollingChange() {
     window.onscroll = function () {
         if (window.pageYOffset > 0) {
             document.getElementById('navbar').classList.add('navigationbar-container-scroll');
@@ -20,10 +26,9 @@ function init() {
             document.getElementById('menu-white').classList.remove('hide');
         }
     }
-    // ******* Switching Navigationbar from transparent to white on onscroll - end ******* 
-    img(0);
 }
-// ******* Onload function - end ******* 
+// ******* Switching Navigationbar from transparent to white on onscroll - end ******* 
+
 
 // ******* Responsive Menu- start ******* 
 function showMenu() {
@@ -44,7 +49,6 @@ function resetInterval() {
     resetZoom = document.getElementById('slideshow-img');
     resetZoom.style.animation = 'none';
     resetZoom.style.animation = null;
-
 }
 
 function switchPic() {
