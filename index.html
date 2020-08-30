@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" type="image/x-icon" href="./img/KuesterImmo_Logo.png">
 </head>
 
@@ -61,9 +63,10 @@
             <!-- Navigationbar - end -->
             <!-- Menu for responsive version - start -->
             <div class="menu">
-                <img id="menu-white" onclick="showMenu()" src="img/menu-white.png" style="position: absolute;">
-                <img id="menu-black" onclick="showMenu()" src="img/menu-black.png" style="position: absolute;"
-                    class="hide">
+                <img class="menu-symbol" id="menu-white" onclick="showMenu()" src="img/menu-white.png"
+                    style="position: absolute;">
+                <img class="menu-symbol hide" id="menu-black" onclick="showMenu()" src="img/menu-black.png"
+                    style="position: absolute;">
             </div>
         </div>
         <div id="responsive-menu-click" class="responsive-menu hide-menu">
@@ -92,30 +95,28 @@
         <div class="proposal-content-overall-div">
             <div class="proposal-content-div">
                 <div class="img-div">
-                    <img class="proposal-img" src="./img/plumber.jpg">
+                    <img src="./img/plumber.jpg">
                     <div class="text-img-div">
                         <div class="responsive-img-title">
                             <h3>Sanitäranlagen</h3>
                         </div>
-
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Austausch <br>
-                                & Reperatur <br>
-                                von Sanitäranlagen</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Komplette <br>
-                                Installation
-                            <p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Instandshaltung <br>
-                                & Erneuerung</p>
-                        </div>
-
+                        <ul>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Austausch
+                                    & Reperatur
+                                    von Sanitäranlagen
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Komplette Installation</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Instandshaltung & Erneuerung</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="img-div">
@@ -124,25 +125,28 @@
                         <div class="responsive-img-title">
                             <h3>Sanierung</h3>
                         </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Malerarbeit <br>
-                                & Tapezierung</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Bodenvorbereitung <br>
-                                & verlegung</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Fachmännische <br>
-                                Beratung</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Reperaturen</p>
-                        </div>
+                        <ul>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Malerarbeit
+                                    & Tapezierung
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Bodenvorbereitung
+                                    & verlegung</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Fachmännische
+                                    Beratung</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Reperaturen</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="img-div">
@@ -151,28 +155,29 @@
                         <div class="responsive-img-title">
                             <h3>Wohnungen</h3>
                         </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Studentenwohnungen</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Pärchenwohnungen</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Familienwohnungen</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Verfügbar in <br>
-                                Hannover oder <br>
-                                Rostock</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Immobilienverwaltung</p>
-                        </div>
+                        <ul>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Studentenwohnungen
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Pärchenwohnungen</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Familienwohnungen</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Verfügbar in Hannover oder Rostock</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Immobilien-verwaltung</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="img-div">
@@ -181,30 +186,32 @@
                         <div class="responsive-img-title">
                             <h3>Gewerbe</h3>
                         </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Büros <br>
-                                & Arbeitsräume</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Bandräume <br>
-                                & Nutzung einer <br>
-                                Übungshalle</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>PKW-Stellplätze <br>
-                                in der Hannover-<br>
-                                Innenstadt</p>
-                        </div>
-                        <div class="bulletText">
-                            <div class="bulletpoint"></div>
-                            <p>Immobilienverwaltung</p>
-                        </div>
+                        <ul>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Büros
+                                    & Arbeitsräume
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Bandräume
+                                    & Nutzung einer
+                                    Übungshalle</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">PKW-Stellplätze
+                                    in der Hannover-
+                                    Innenstadt</div>
+                            </li>
+                            <li>
+                                <div class="bulletpoint"></div>
+                                <div class="bulletpoint-content">Immobilien-verwaltung</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
 
