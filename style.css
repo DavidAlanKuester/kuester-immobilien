@@ -78,7 +78,10 @@ body {
 }
 
 .header-content h1 {
-    border-bottom: solid 10px crimson;
+    border-left: solid 10px crimson;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .header-NumberPic {
@@ -464,30 +467,34 @@ body {
         align-items: center;
         justify-content: center;
         color: white;
-        font-size: 32px;
+        font-size: 28px;
         padding-left: 0px;
+        margin-left: 16px ;
     }
     .header-content h1 {
-        border-bottom: solid 5px crimson;
+        border-left: solid 5px crimson;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        padding-left: 8px;
     }
     .header-logo {
         left: 16px;
-        height: 120px;
-        width: 260px;
+        top: 12px;
+        height: 100px;
+        width: 220px;
         object-fit: cover;
     }
     /* Responsive-Menu - start */
     .menu {
-        left: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 120px;
         height: 132px;
     }
     .menu-symbol {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         object-fit: cover;
     }
     .responsive-menu {
@@ -615,12 +622,12 @@ body {
     .proposal-title-div p {
         margin: 0;
         color: rgb(45, 65, 69);
-        font-size: 20px;
+        font-size: 16px;
     }
     .proposal-title-div h2 {
         margin: 4px;
         color: rgb(45, 65, 69);
-        font-size: 32px;
+        font-size: 28px;
     }
     .proposal-content-overall-div {
         width: 100%;
@@ -657,7 +664,7 @@ body {
         align-items: center;
     }
     .responsive-img-title h3 {
-        font-size: 40px;
+        font-size: 32px;
         margin-top: 16px;
         margin-bottom: 16px;
         padding-right: 8px;
@@ -712,11 +719,143 @@ body {
     }
     .page-padding-data {
         padding-top: 160px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .page-padding-imprint {
+        padding-top: 160px;
+        padding-left: 76px;
+        padding-right: 76px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .navigationbar-container {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 104px;
+        left: 0;
+        right: 0;
+        top: 0;
+        color: rgb(45, 65, 69, 0);
+        z-index: 1;
+        transition: all 225ms ease-in-out;
+    }
+    .header-logo {
+        left: 8px;
+        top: 12px;
+        height: 80px;
+        width: 180px;
+        object-fit: cover;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 112px;
+    }
+
+    .menu-symbol {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+    }
+
+    .proposal-title-div p {
+        margin: 0;
+        color: rgb(45, 65, 69);
+        font-size: 12px;
+    }
+    .proposal-title-div h2 {
+        margin: 4px;
+        color: rgb(45, 65, 69);
+        font-size: 20px;
+    }
+    .responsive-img-title h3 {
+        font-size: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    .bulletpoint-content {
+        width: 75%;
+        font-size: 12px;
+    }
+    .right-footer {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: rgb(205, 228, 222);
+        font-size: 16px;
+    }
+    .responsive-menu {
+        z-index: 4;
+        position: fixed;
+        width: 260px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 225ms ease;
+    }
+    .responsive-menu-otherpages {
+        z-index: 4;
+        position: fixed;
+        width: 260px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(45, 65, 69);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 225ms ease;
+    }
+
+    .navigationbar-container-data {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 104px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: white;
+        border-bottom: 1px solid black;
+        z-index: 0;
+        transition: all 225ms ease-in-out;
+    }
+
+    .page-padding-data h1 {
+        font-size: 24px;
+    }
+    .page-padding-imprint {
+        padding-top: 160px;
+        padding-left: 28px;
+        padding-right: 28px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 0;
     }
 }
 

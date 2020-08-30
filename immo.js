@@ -80,13 +80,13 @@ function img(a) {
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.remove('hide');
         document.getElementById('haus4').classList.add('hide');
-        document.getElementById('headline').innerHTML = 'Wohnimmobilien';
+        document.getElementById('headline').innerHTML = 'Wohnung in Hannover & Rostock';
     } else if (a == 3) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.remove('hide');
-        document.getElementById('headline').innerHTML = 'Gewerbeimmobilien';
+        document.getElementById('headline').innerHTML = 'Büros, Bandräume & Parkplätze';
     }
 
     setTimeout(function () {
