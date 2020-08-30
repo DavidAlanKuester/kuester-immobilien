@@ -74,19 +74,19 @@ function img(a) {
         document.getElementById('haus2').classList.remove('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.add('hide');
-        document.getElementById('headline').innerHTML = 'Handwerksservice';
+        document.getElementById('headline').innerHTML = 'Handwerk & Sanierung';
     } else if (a == 2) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.remove('hide');
         document.getElementById('haus4').classList.add('hide');
-        document.getElementById('headline').innerHTML = 'Verwaltung';
+        document.getElementById('headline').innerHTML = 'Wohnimmobilien';
     } else if (a == 3) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.remove('hide');
-        document.getElementById('headline').innerHTML = 'Sanierungsservice';
+        document.getElementById('headline').innerHTML = 'Gewerbeimmobilien';
     }
 
     setTimeout(function () {
