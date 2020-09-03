@@ -30,6 +30,9 @@ body {
     object-fit: cover;
     opacity: 1;
     transition: all 225ms ease-in-out;
+}
+
+.header-image-zoom {
     animation: zoomIn 10s ease infinite;
 }
 

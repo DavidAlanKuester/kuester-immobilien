@@ -1,14 +1,22 @@
 let i = 0;
-let imgInterval = setInterval(switchPic, 10000);
+let imgInterval;
 
 // ******* Onload function - start ******* 
 function init() {
     scrollingChange();
-    img(0);
+    changeImageAndHeadline(0);
+
+
+    if(window.location.href.endsWith('/') || window.location.href.endsWith('/index.html')) {
+        // Start interval for image slideshow
+        imgInterval = setInterval(switchPic, 10000);
+    }
 }
 // ******* Onload function - end ******* 
 
-// ******* Switching Navigationbar from transparent to white on onscroll - start ******* 
+/**
+ * Switching Navigationbar from transparent to white on onscroll - start
+ */ 
 function scrollingChange() {
     window.onscroll = function () {
         if (window.pageYOffset > 0) {
@@ -46,9 +54,6 @@ function removeMenu() {
 function resetInterval() {
     clearInterval(imgInterval);
     imgInterval = setInterval(switchPic, 10000);
-    resetZoom = document.getElementById('slideshow-img');
-    resetZoom.style.animation = 'none';
-    resetZoom.style.animation = null;
 }
 
 function switchPic() {
@@ -56,36 +61,46 @@ function switchPic() {
     if (i > 3) {
         i = 0;
     }
-    img(i);
+    changeImageAndHeadline(i);
 }
 
-function img(a) {
+
+
+function changeImageAndHeadline(imageIndex) {
     document.getElementById('headline').classList.add('fly-in');
 
-    if (a == 0) {
+    for(let i=1; i<=4; i++){
+        document.getElementById('haus' + i).classList.remove('header-image-zoom');
+    }
+
+    if (imageIndex == 0) {
         document.getElementById('haus1').classList.remove('hide');
+        document.getElementById('haus1').classList.add('header-image-zoom');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.add('hide');
         document.getElementById('headline').innerHTML = 'Küster Immobilien';
 
-    } else if (a == 1) {
+    } else if (imageIndex == 1) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.remove('hide');
+        document.getElementById('haus2').classList.add('header-image-zoom');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.add('hide');
         document.getElementById('headline').innerHTML = 'Handwerk & Sanierung';
-    } else if (a == 2) {
+    } else if (imageIndex == 2) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.remove('hide');
+        document.getElementById('haus3').classList.add('header-image-zoom');
         document.getElementById('haus4').classList.add('hide');
-        document.getElementById('headline').innerHTML = 'Wohnung in Hannover & Rostock';
-    } else if (a == 3) {
+        document.getElementById('headline').innerHTML = 'Wohnungen in Hannover & Rostock';
+    } else if (imageIndex == 3) {
         document.getElementById('haus1').classList.add('hide');
         document.getElementById('haus2').classList.add('hide');
         document.getElementById('haus3').classList.add('hide');
         document.getElementById('haus4').classList.remove('hide');
+        document.getElementById('haus4').classList.add('header-image-zoom');
         document.getElementById('headline').innerHTML = 'Büros, Bandräume & Parkplätze';
     }
 
